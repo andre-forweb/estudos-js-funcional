@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+
+	<script type="text/javascript">
+
+		/* Rodar no console */
+
+		// Ex1
+		function setIdade(idade){
+			return idade;
+		}
+
+		function maioridade(idade){
+			return idade >= 18;
+		}
+
+		// Ex2
+		function str(s){
+			if(typeof s !== 'string'){
+				throw new TypeError('Expected a string');
+			} else {
+				return s;
+			}
+		}
+
+		function repeat(s){
+			s = str(s);
+			return s + s;
+		}
+
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>	
