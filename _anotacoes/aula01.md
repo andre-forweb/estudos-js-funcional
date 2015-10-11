@@ -10,6 +10,8 @@
 	* "menor parte" do sistema é uma função
 	* valores de entrada de uma função são o retorno de outras funções
 	* execução do programa = avaliação de expressões
+	* Não existe conteito de variáveis ou atribuição
+	* Iterações devem ser construídas com recursão (não há laços de repetição, como na programação imperativa)
 
 Programação funcional é um estilo de programação diferente das linguagens procedurais, enfatizando a avaliação de expressões ao invés da execução de comandos. Utiza-se funções como valores básicos e, dessa forma, evita estados ou dados estados. Ex.:
 
@@ -21,9 +23,6 @@ funtion saudacao(txt){
 
 saudacao('Olá') -> o valor de retorno não muda, sempre será "Olá".
 
-	* Não existe conteito de variáveis ou atribuição
-	* Iterações devem ser construídas com recursão (não há laços de repetição, como na programação imperativa)
-
 
 * Imperativo
 	* O programa é baseado numa sequencia de instruções explícitas (condicionais, laços de repetição etc)
@@ -32,41 +31,42 @@ saudacao('Olá') -> o valor de retorno não muda, sempre será "Olá".
 
 ##Por que usar Programação funcional:##
 
-	* Concorrência (não tem deadlocks ou race condition)
-	* Testes (não precisa de preocupar com estado, análise das expressões pode ser feita matematicamente)
-	* Debugging (facilidade de rastrear valor no stack trace)
-	* Base teórica (linguagem é baseada no cálculo Lambda)
+* Concorrência (não tem deadlocks ou race condition)
+* Testes (não precisa de preocupar com estado, análise das expressões pode ser feita matematicamente)
+* Debugging (facilidade de rastrear valor no stack trace)
+* Base teórica (linguagem é baseada no cálculo Lambda)
 
 ##Aplicações##
-	* BI
-	* Sistemas altamente concorrentes (como sistema de estatística, análise financeira etc)
+* BI
+* Sistemas altamente concorrentes (como sistema de estatística, análise financeira etc)
 
 ##Conceitos/Definições##
-	* Implementação de Map/Reduce (percorre uma lista e aplica uma função a cada item da lista)
-	* Toda função precisa retornar um valor
-	* Função identidade: função que recebe um valor e retorna ele mesmo
-	* Atomic design: pequenos átomos independentes compõe funções maiores
+* Implementação de Map/Reduce (percorre uma lista e aplica uma função a cada item da lista)
+* Toda função precisa retornar um valor
+* Função identidade: função que recebe um valor e retorna ele mesmo
+* Atomic design: pequenos átomos independentes compõe funções maiores
 
 
 ##Linguagens funcionais:##
-	* Erlang
-	* F#
-	* Haskell
-	* Lisp (introduziu caracteristicas da linguagem, inspirada no cálculo λ)
-	* Scheme ("simplificação" do Lisp, foi base para a linguagem JavaScript)
-	* OCaml
-	* R
-	* ...
-	* Elixir (linguagem de alto nível, sintaxe mais convidativa, que roda na VM do Erlang)
+* Erlang
+* F#
+* Haskell
+* Lisp (introduziu caracteristicas da linguagem, inspirada no cálculo λ)
+* Scheme ("simplificação" do Lisp, foi base para a linguagem JavaScript)
+* OCaml
+* R
+* ...
+* Elixir (linguagem de alto nível, sintaxe mais convidativa, que roda na VM do Erlang)
 
 
 ##Javascript##
-	* Função anônima
-	* IFE (função auto executável)
+* Função anônima
+* IFE (função auto executável)
 
 
-Ref: https://github.com/Webschool-io/workshop-js-funcional-free/blob/master/README.md
-Ref: http://www.dcc.fc.up.pt/~pbv/aulas/pf/slides/aula1.pdf
-Ref: https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_funcional
-Ref: ftp://ftp.dca.fee.unicamp.br/pub/docs/ea877/lingpro.pdf
-Ref: http://www.cin.ufpe.br/~if686/aulas/02-Introducao_Haskell.pdf
+##Referências##
+https://github.com/Webschool-io/workshop-js-funcional-free/blob/master/README.md
+http://www.dcc.fc.up.pt/~pbv/aulas/pf/slides/aula1.pdf
+https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_funcional
+ftp://ftp.dca.fee.unicamp.br/pub/docs/ea877/lingpro.pdf
+http://www.cin.ufpe.br/~if686/aulas/02-Introducao_Haskell.pdf
