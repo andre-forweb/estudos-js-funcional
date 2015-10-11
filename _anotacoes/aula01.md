@@ -65,6 +65,7 @@ saudacao('Olá') -> o valor de retorno não muda, sempre será "Olá".
 
 
 ##Referências##
+* http://webschool.io/jsfuncional/
 * https://github.com/Webschool-io/workshop-js-funcional-free/blob/master/README.md
 * http://www.dcc.fc.up.pt/~pbv/aulas/pf/slides/aula1.pdf
 * https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_funcional
