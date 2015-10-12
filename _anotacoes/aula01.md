@@ -22,7 +22,7 @@ funtion saudacao(txt){
 	return txt;
 }
 
-saudacao('Olá') //o valor de retorno não muda, sempre será "Olá".
+saudacao('Olá'); //o valor de retorno não muda, sempre será "Olá".
 ```
 
 
@@ -63,7 +63,7 @@ saudacao('Olá') //o valor de retorno não muda, sempre será "Olá".
 
 ##Javascript##
 * Função anônima
-* IFE (função auto executável)
+* IIFE (função auto executável -> Immediately-Invoked Function Expression)
 
 
 ##Referências##
