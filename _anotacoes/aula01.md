@@ -15,13 +15,15 @@
 
 Programação funcional é um estilo de programação diferente das linguagens procedurais, enfatizando a avaliação de expressões ao invés da execução de comandos. Utiza-se funções como valores básicos e, dessa forma, evita estados ou dados estados. Ex.:
 
-var teste = 'Olá' -> a variável "teste" poderá assumir qualquer outro valor: teste = 'Oi', teste = 'Tchau' etc.
+```js
+var teste = 'Olá'; //a variável "teste" poderá assumir qualquer outro valor: teste = 'Oi', teste = 'Tchau' etc.
 
 funtion saudacao(txt){
 	return txt;
 }
 
-saudacao('Olá') -> o valor de retorno não muda, sempre será "Olá".
+saudacao('Olá') //o valor de retorno não muda, sempre será "Olá".
+```
 
 
 * Imperativo
