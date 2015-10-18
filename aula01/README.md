@@ -1,7 +1,5 @@
 #Tópicos da Aula 01
 
-* código referente em code/aula01.html
-
 ##Paradigmas de desenvolvimento:##
 
 * Funcional

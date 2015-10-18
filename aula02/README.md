@@ -1,7 +1,5 @@
 #Tópicos da Aula 02
 
-* código referente em code/aula02.html
-
 ##Teoria sobre Lambda
 
 * Lambda (λ) é uma regra de transformação, exprime argumento que entra na função;
