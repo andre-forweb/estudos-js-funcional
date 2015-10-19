@@ -3,7 +3,7 @@
 >[DICA] Biblioteca para trabalhar com funções anônimas em ES6 (objetivo da lib. é trazer funcionalidades do Heskell pra JS):
 <https://github.com/alanrsoares/prelude-js>
 
-##Por que Javascript é funcional?
+##Por que Javascript é uma linguagem funcional?
 - Porque a linguagem permite trabalhar com funções auto-executáveis, usar o retorno de uma função como parâmetro de outra função e demais características da programação funcional;
 
 - Basicamente, programação funcional consiste em dividir a lógica em pequenos átomos (funções) que são chamados de forma encadeada, inclusive passando funções como parâmetro de outras funções, retornando valores;
