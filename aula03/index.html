@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+
+	<script type="text/javascript">
+
+		// Exercício
+		var fn = function(UNICORNIO){
+			return function(y){
+				return UNICORNIO;
+			}
+		}
+		console.log(fn(1)); // retorna o corpo da função que recebe y;
+		console.log(fn(1)(6)); // retorna 1 (pois na função só se retorna o valor de UNICORNIO) ;
+
+
+		// multiplar valores passados em UNICORNIO e y
+		var fnMult = function(UNICORNIO){
+			return function(y){
+				return UNICORNIO * y;
+			}
+		}
+		console.log(fnMult(2)(6)); // retorna 12;
+
+
+		// Chamadas encadeadas de métodos;
+		function Pessoa()
+		{
+			this.nome = null;
+			this.idade = null;
+			this.sexo = null;
+
+			this.setNome = function(x)
+			{
+				this.nome = x;
+				return this;
+			},
+
+			this.setIdade = function(x)
+			{
+				this.idade = x;
+				return this;
+			},
+
+			this.setSexo = function(x)
+			{
+				this.sexo = x;
+				return this;
+			}
+		}
+
+		var eu = new Pessoa();
+		eu.setNome('Andre').setIdade(27).setSexo('m');
+		// Sem retornar o objeto, teria que fazer pessoa.setNome('...'); pessoa.setIdade(1); pessoa.set...
+		console.log(eu);
+		
+
+		// Funções anônimas
+
+		// Atribuída a uma variável;
+		var anon1 = function()
+		{
+			console.log('Agora a função foi chamada!');
+		}
+		anon1();
+
+		// "Simulação" de um callback
+		function anon2()
+		{
+			this.exemplo = function($callback){
+				// Executa ajax, promisse etc... e chama a função anônima no callback:
+				$callback.call(this, 'Valor1', 'Valor2', 'Valor3');
+			}
+		}
+
+		var $anon2 = new anon2();
+		$anon2.exemplo(function($val1, $val2, $val3){
+			console.log('Parâmetro 1: ' + $val1 + '.');
+			console.log('Parâmetro 2: ' + $val2 + '.');
+			console.log('Parâmetro 3: ' + $val3 + '.');
+		});
+
+
+
+		// IIFE - Immediately-Invoked Function Expression
+
+		// Não funciona
+		/*function(){
+			console.log('Chamou!');
+		}();*/
+
+		// assim funciona;
+		(function(){
+			console.log('Foi!')
+		}());
+
+		// assim também;
+		(function(){
+			console.log('Também foi!')
+		})();
+
+		// com passagem de parâmetro;
+		(function($val1, $val2){
+			console.log($val1 + ' ' + $val2 + '!');
+		})('Alô', 'você');
+
+
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>
